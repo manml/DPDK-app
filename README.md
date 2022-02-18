@@ -1,2 +1,2 @@
-# DPDK-app
+# dpdk-app
 DPDK example application 
