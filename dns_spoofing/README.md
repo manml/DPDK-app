@@ -1,4 +1,4 @@
-# icmp spoofing
+# dns spoofing
 
 1. Setup environment variable  
 2. Copy the directory to examples/  
