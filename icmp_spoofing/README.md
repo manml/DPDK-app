@@ -1,5 +1,6 @@
 # icmp spoofing
 
+The code doesn't include ARP handling. You may need to implement ARP function by yourself.
 1. Setup environment variable  
 2. Copy the directory to examples/  
 3. Make  
