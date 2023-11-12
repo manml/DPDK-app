@@ -8,6 +8,7 @@ Client 172.31.27.54 -- Transit Gateway -- DPDK 10.0.0.67 -- Servers(10.0.0.156 &
 The code doesn't include ARP handling because EC2 network handles it.  
 Load Balancing algorithm is Round Robin.  
 DPDK receive client's packets and change source IP and destination IP into DPDK IP and server IP respectively.  
+DPDK hash table is used to store NAT & LB information.
 For example:  
 >//Forward 172.31.27.54 10038 -> 10.0.0.67 80  => 10.0.0.67 14589 -> 10.0.0.156 80  
 //Reverse 10.0.0.156 80 -> 10.0.0.67 14589  => 10.0.0.67 80 -> 172.31.27.54 10038
