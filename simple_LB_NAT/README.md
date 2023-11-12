@@ -9,7 +9,7 @@ The code doesn't include ARP handling because EC2 network handles it.
 Load Balancing algorithm is Round Robin.
 DPDK receive client's packets and change source IP and destination IP into DPDK IP and server IP respectively.
 For example:
->//Forward 172.31.27.54 10038 -> 10.0.0.67 80  => 10.0.0.67 14589 -> 10.0.0.156 80
+>//Forward 172.31.27.54 10038 -> 10.0.0.67 80  => 10.0.0.67 14589 -> 10.0.0.156 80  
 //Reverse 10.0.0.156 80 -> 10.0.0.67 14589  => 10.0.0.67 80 -> 172.31.27.54 10038
 
 It only can handle TCP traffic as of now.
